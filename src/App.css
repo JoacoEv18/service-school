@@ -15,7 +15,7 @@
 }
 .sectionTitulo{
   grid-area: sectionTitulo;
-  background: linear-gradient(rgba(5,7,12,0.5), rgba(255, 255, 255, 1)), url(../public/img/IMG_7128.JPG) no-repeat center center;
+  background: linear-gradient(rgba(5,7,12,0.5), rgba(255, 255, 255, 1)), url(../public/img/IMG_9643.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
 }
