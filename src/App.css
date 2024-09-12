@@ -4,6 +4,21 @@
   margin: 0%;
 }
 
+.nav{
+  grid-area: nav;
+  text-align: justify;
+  padding-left: 2% ;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 1));
+}
+.nav a{
+  color: red;
+}
+.sectionTitulo{
+  grid-area: sectionTitulo;
+  background: linear-gradient(rgba(5,7,12,0.5), rgba(255, 255, 255, 1)), url(../public/img/IMG_7128.JPG) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
 .titulo{
   font-size: 100px;
   padding: 0%;
@@ -16,44 +31,11 @@
 }
 .desc{
   font-size: 30px;
+  box-shadow: 0 0 10px black;
+  padding: 3%;
+  width: 90%;
+  margin-left: 2%;
 }
-
-.sectionQuestion h1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  filter: drop-shadow(
-    0px 10px 3px rgba(0, 0, 0, 0.3)
-  );
-}
-
-.sectionTitulo{
-  grid-area: sectionTitulo;
-  background: linear-gradient(rgba(5,7,12,0.5), rgba(255, 255, 255, 1)), url(../public/img/IMG_7128.JPG) no-repeat center center;
-  background-size: cover;
-  margin-bottom: 50px;
-}
-.sectionQuestion{
-  grid-area: sectionQuestion;
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
-  grid-template-areas: 
-  "insc form";
-  margin-top: 5%;
-}
-
-.vidIndro{
-  font-size: 30px;
-}
-
-.vid{
-  grid-area: vid;
-  background: linear-gradient(rgba(255, 255, 255, 0.01), rgb(255, 255, 255)); 
-}
-
 .introduction{
   grid-area: introduction;
   font-size: 70px;
@@ -62,18 +44,68 @@
   justify-content: center;
   align-items:center;
   filter: drop-shadow(
-    0px 10px 3px rgba(0, 0, 0, 0.3)
+    0px 5px 3px rgba(0, 0, 0, 0.3)
   );
 }
+.vidIndro{
+  font-size: 30px;
+}
+
+.vid{
+  grid-area: vid;
+  background: linear-gradient(rgba(255, 255, 255, 0.01), rgb(255, 255, 255)); 
+  height: 804px;
+  margin-bottom: 10%;
+}
+
 
 .player{
   grid-area: player;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-
+  filter: drop-shadow(
+    0px 10px 10px rgba(0, 0, 0, 0.5)
+  );
 }
+
+.react-player{
+  height: 480px;
+  width: 100vh;
+}
+
+.insc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  filter: drop-shadow(
+    0px 10px 3px rgba(0, 0, 0, 0.3)
+  );
+  grid-area: insc;
+  font-size: 60px;
+  margin: 15%;
+}
+
+.insc a{
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.sectionQuestion{
+  grid-area: sectionQuestion;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "insc form";
+  margin-top: 5%;
+}
+
 
 .footer{
   grid-area: footer;
@@ -81,12 +113,6 @@
   opacity: 0.8;
 }
 
-.nav{
-  grid-area: nav;
-  text-align: justify;
-  padding-left: 2% ;
-  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 1));
-}
 
 .grid{
   height: 100vh;
@@ -103,39 +129,61 @@
   ;
 }
 
-.insc{
-  grid-area: insc;
-  font-size: 40px;
-  margin: 30%;
-}
+
 
 .form{
   grid-area: form;
   
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 872px) {
   .grid{
     height: 100vh;
     margin: 0%;
     display: grid;
-    grid-gap: 0.5em;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto), 1fr;
     grid-template-areas: 
+    "nav"
     "sectionTitulo"
     "vid"
     "sectionQuestion"
     "footer";
   }
   .sectionQuestion{
+    margin: 0%;
+    height: 1300px;
     display: grid;
-    grid-gap: 0.5em;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "insc"
     "form";
+  }
+
+  .nav{
+    font-size: 10px;
+    margin: 0%;
+  }
+  .titulo{
+    font-size: 50px;
+  }
+  .desc{
+    font-size: 16px;
+    box-shadow: 0 0 10px black;
+  }
+  .introduction{
+    font-size: 30px;
+  }
+  .vidIndro{
+    font-size: 15px;
+  }
+  .vid{ 
+    height: 255px;
+    margin-bottom: 0%;
+  }
+  .insc{
+    font-size: 40px;
   }
 }
 
