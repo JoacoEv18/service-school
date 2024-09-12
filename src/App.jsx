@@ -30,6 +30,7 @@ function App() {
             volume={0}
             width='80%'
             height='85%'
+            controls
             />
           </div>
         </section>
