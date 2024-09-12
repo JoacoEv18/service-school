@@ -5,21 +5,27 @@
 }
 
 .titulo{
-  font-size: 530px;
+  font-size: 100px;
   padding: 0%;
   margin: 0%;
   line-height: 2;
+  color: white;
+  filter: drop-shadow(
+    0px 10px 3px rgba(0, 0, 0, 0.3)
+  );
 }
 .desc{
-  font-size: 100px;
-  
-
+  font-size: 30px;
 }
+
 .sectionQuestion h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  filter: drop-shadow(
+    0px 10px 3px rgba(0, 0, 0, 0.3)
+  );
 }
 
 .sectionTitulo{
@@ -36,28 +42,28 @@
   grid-template-rows: 100%;
   grid-template-areas: 
   "insc form";
+  margin-top: 5%;
+}
+
+.vidIndro{
+  font-size: 30px;
 }
 
 .vid{
   grid-area: vid;
-  background: linear-gradient(rgba(255, 255, 255, 0.01), rgb(255, 255, 255));
-  padding: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
-  grid-template-areas: 
-  "introduction player"
-  ;
+  background: linear-gradient(rgba(255, 255, 255, 0.01), rgb(255, 255, 255)); 
 }
 
 .introduction{
   grid-area: introduction;
-  font-size: 170px;
+  font-size: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-
+  filter: drop-shadow(
+    0px 10px 3px rgba(0, 0, 0, 0.3)
+  );
 }
 
 .player{
@@ -71,18 +77,21 @@
 
 .footer{
   grid-area: footer;
-  background-color: blueviolet;
+  background-color: rgb(191, 189, 189);
+  opacity: 0.8;
 }
 
 .nav{
   grid-area: nav;
+  text-align: justify;
+  padding-left: 2% ;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 1));
 }
 
 .grid{
   height: 100vh;
   margin: 0;
   display: grid;
-  grid-gap: 0.5em;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 18fr 1fr;
   grid-template-areas: 
@@ -96,7 +105,8 @@
 
 .insc{
   grid-area: insc;
-  font-size: 170px;
+  font-size: 40px;
+  margin: 30%;
 }
 
 .form{

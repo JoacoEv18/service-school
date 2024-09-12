@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ReactPlayer from "react-player"
 import './App.css'
 
@@ -7,32 +8,40 @@ function App() {
     <>
     <div className="grid" >
       <div className="nav">
-        <h1>navvar</h1>
+        <h1>AvivamientoSI</h1>
       </div>
         <section className="sectionTitulo">
           <h1 className="titulo">Escuela de Servicio</h1>
-          <a className="desc">Escuela de Servicio - AvivamientoSI</a>
+          <div className="desc">
+            <a>"Palabra fiel: Si alguno anhela obispado, buena obra desea." 1 Timoteo 3:1</a>
+          </div>
+          
         </section>
         <section className="vid" >
-          <h1 className="introduction">Introduccion</h1>
+          <div>
+            <h1 className="introduction">¿A quiénes está dirigido?</h1>
+            <a className="vidIndro">Aqui te dejamos un video introductorio</a>
+          </div>
           <div className="player">
             <ReactPlayer
             url={URL}
             playing={false}
             volume={0}
-            height={1080}
-            width={1920}
+            height={480}
+            width={850}
             />
           </div>
         </section>
         <section className="sectionQuestion">
-          <h1 className="insc">Inscripciones 2024</h1>
+          <div className="insc">
+            <h1 >Inscripciones 2024</h1>
+          </div>
           <div className="form">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4Hnbrox28PvtJiw9qfU4awFJXMSm4sK2grDTX3h6RVPZqOQ/viewform?embedded=true" width="2000" height="2000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC7y9Hzx4Pi9GRREbJgvdvUbr-wiRDfe8Jioap5VSEiChtZg/viewform?embedded=true" width="640" height="640" frameBorder="0" marginHeight="0" marginWidth="0">Cargando…</iframe>
           </div>
         </section>
         <footer className="footer">
-          <h3>AvivamientoSI</h3>
+          <h6>Copyright © 2024 Avivamiento SI</h6>
         </footer>
     </div>
     </>
