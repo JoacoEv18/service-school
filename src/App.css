@@ -1,0 +1,131 @@
+#root {
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+}
+
+.titulo{
+  font-size: 530px;
+  padding: 0%;
+  margin: 0%;
+  line-height: 2;
+}
+.desc{
+  font-size: 100px;
+  
+
+}
+.sectionQuestion h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.sectionTitulo{
+  grid-area: sectionTitulo;
+  background: linear-gradient(rgba(5,7,12,0.5), rgba(255, 255, 255, 1)), url(../public/img/IMG_7128.JPG) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.sectionQuestion{
+  grid-area: sectionQuestion;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "insc form";
+}
+
+.vid{
+  grid-area: vid;
+  background: linear-gradient(rgba(255, 255, 255, 0.01), rgb(255, 255, 255));
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "introduction player"
+  ;
+}
+
+.introduction{
+  grid-area: introduction;
+  font-size: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.player{
+  grid-area: player;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.footer{
+  grid-area: footer;
+  background-color: blueviolet;
+}
+
+.nav{
+  grid-area: nav;
+}
+
+.grid{
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 18fr 1fr;
+  grid-template-areas: 
+  "nav nav nav"
+  "sectionTitulo sectionTitulo sectionTitulo"
+  "vid vid vid"
+  "sectionQuestion sectionQuestion sectionQuestion"
+  "footer footer footer"
+  ;
+}
+
+.insc{
+  grid-area: insc;
+  font-size: 170px;
+}
+
+.form{
+  grid-area: form;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .grid{
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto), 1fr;
+    grid-template-areas: 
+    "sectionTitulo"
+    "vid"
+    "sectionQuestion"
+    "footer";
+  }
+  .sectionQuestion{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "insc"
+    "form";
+  }
+}
+
