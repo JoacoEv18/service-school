@@ -3,7 +3,7 @@ import ReactPlayer from "react-player"
 import './App.css'
 
 function App() {
-  const URL = "https://youtu.be/YimXtgMSmpM"
+  const URL = "https://youtu.be/R7Re5M-cvCI"
   return (
     <>
     <div className="grid" >
@@ -27,7 +27,7 @@ function App() {
             className="react-player"
             url={URL}
             playing={false}
-            volume={0}
+            volume={0.5}
             width='80%'
             height='85%'
             controls
