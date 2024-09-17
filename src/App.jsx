@@ -3,7 +3,7 @@ import ReactPlayer from "react-player"
 import './App.css'
 
 function App() {
-  const URL = "https://youtu.be/R7Re5M-cvCI"
+  const URL = "https://youtu.be/WfOeC0DK0tI"
   return (
     <>
     <div className="grid" >
@@ -39,7 +39,7 @@ function App() {
             <h1 >Inscripciones <a>2024</a></h1>
           </div>
           <div className="form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC7y9Hzx4Pi9GRREbJgvdvUbr-wiRDfe8Jioap5VSEiChtZg/viewform?embedded=true" width="640" height="640" frameBorder="0" marginHeight="0" marginWidth="0">Cargando…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC7y9Hzx4Pi9GRREbJgvdvUbr-wiRDfe8Jioap5VSEiChtZg/viewform?embedded=true" width="640" height="640" frameBorder="0" marginHeight="0" marginWidth="0">SI NO CARGA REINICIE LA PAG</iframe>
           </div>
         </section>
         <footer className="footer">
