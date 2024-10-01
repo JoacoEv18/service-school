@@ -133,6 +133,29 @@
 
 .form{
   grid-area: form;
+  filter: drop-shadow(
+    0px 0px 0px rgba(0, 0, 0, 0.3)
+  );
+  font-size: 50px;
+  margin: 20%;
+  color: red;
+}
+
+.consultas{
+  color: black;
+  font-size: 25px;
+  filter: none;
+}
+
+.WhatsApp{
+  text-decoration: none;
+  color: white;
+  margin: 0%;
+  font-size: 20px;
+  padding: 2%;
+  background-color: green;
+  border-radius: 10%;
+
 }
 
 @media only screen and (max-width: 872px) {
@@ -151,7 +174,7 @@
   }
   .sectionQuestion{
     margin: 0%;
-    height: 1300px;
+    height: 1000px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -185,12 +208,19 @@
     font-size: 40px;
   }
   .form{
-    margin-left: -5%;
+    /* margin-left: -5%; */
+    font-size: 30px;
   }
-  .form iframe{
+  .consultas{
+    font-size: 20px;
+  }
+  .WhatsApp{
+    
+  }
+/*   .form iframe{
     width: 400px;
     height: 950px;
     margin-top: -20%;
-  }
+  } */
 }
 

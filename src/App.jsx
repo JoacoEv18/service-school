@@ -39,7 +39,13 @@ function App() {
             <h1 >Inscripciones <a>2024</a></h1>
           </div>
           <div className="form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC7y9Hzx4Pi9GRREbJgvdvUbr-wiRDfe8Jioap5VSEiChtZg/viewform?embedded=true" width="640" height="640" frameBorder="0" marginHeight="0" marginWidth="0">SI NO CARGA REINICIE LA PAG</iframe>
+            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC7y9Hzx4Pi9GRREbJgvdvUbr-wiRDfe8Jioap5VSEiChtZg/viewform?embedded=true" width="640" height="640" frameBorder="0" marginHeight="0" marginWidth="0">SI NO CARGA REINICIE LA PAG</iframe> */}
+            <h1>CERRADO</h1>
+            <div>
+              <a className="consultas">Para cualquier consulta, escríbanos al</a>
+              <br />
+              <a className="WhatsApp" href="https://api.whatsapp.com/send?phone=5491127306488&text=&source=&data=">WhatsApp</a>
+            </div>
           </div>
         </section>
         <footer className="footer">
